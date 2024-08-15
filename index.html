@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="canvas-area" id="canvasArea"></div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="fontSelect">Font:</label>
+                <select id="fontSelect">
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+            </div>
+            <div class="control-group size-color">
+                <div id="fontSizeDiv">
+                    <label for="fontSize">Size:</label>
+                    <input type="number" id="fontSize" value="16" min="8" max="72">
+                </div>
+                <div id="colorPickerDiv">
+                    <label for="colorPicker">Color:</label>
+                    <input type="color" id="colorPicker" value="#000000">
+                </div>
+            </div>
+            <button id="addTextBtn">Add Text</button>
+        </div>
+    </div>
+
+ <script src="ta.js"></script>
+</body>
+</html>
